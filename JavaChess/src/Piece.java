@@ -1,11 +1,12 @@
+import JavaChess.PieceColor;
 
-public class Piece {
+public abstract class Piece {
 	protected Position position;
 	protected PieceColor color;
 	
-	public Piece(Position postion, PieceColor color) {
+	public Piece(PieceColor color, Position postion ) {
 		this.color=color;
-		this.position=position;
+		this.position=position;	
 	}
 	
 	public PieceColor getColor() {
@@ -16,7 +17,7 @@ public class Piece {
 		return position;
 	}
 
-	public setPosition(Position position) {
+	public void setPosition(Position position) {
 		this.position=position;
 	}
 	
